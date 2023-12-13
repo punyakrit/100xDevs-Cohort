@@ -5,6 +5,18 @@
  */
 
 function sleep(milliseconds) {
+    for(let i=0;i<milliseconds*1000;i++){
+
+    }
+    return pro(milliseconds)
 }
 
+function pro(n){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+          resolve(n)
+        }, n*1000)
+      
+      })
+}
 module.exports = sleep;
